@@ -25,15 +25,15 @@ w.timeout(100): Define o tempo de espera em 100 ms para a próxima entrada do jo
 
 2. Inicialização da Cobrinha e da Comida
 
-snk_x = sw // 4
-snk_y = sh // 2
-snake = [
-    [snk_y, snk_x],
-    [snk_y, snk_x - 1],
-    [snk_y, snk_x - 2]
+ snk_x = sw // 4
+ snk_y = sh // 2
+ snake = [
+     [snk_y, snk_x],
+     [snk_y, snk_x - 1],
+     [snk_y, snk_x - 2]
 ]
-food = [sh // 2, sw // 2]
-w.addch(int(food[0]), int(food[1]), curses.ACS_PI)
+ food = [sh // 2, sw // 2]
+ w.addch(int(food[0]), int(food[1]), curses.ACS_PI)
 
 Posição inicial da cobra:
 
